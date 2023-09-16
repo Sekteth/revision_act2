@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #dddddd, #c0bfbf); /* Define el degradado */
+}
+
+/* Color para los textos dentro de la etiqueta <p> */
+p {
+    color: #f5709d;
+}
+
+/* Estilos para el contenedor del carrusel */
+.carousel-container {
+    width: 600px; /* Ancho deseado del carrusel */
+    height: 400px; /* Altura deseada del carrusel */
+    overflow: hidden;
+    position: relative;
+    margin-left: auto; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */
+}
+
+/* Color para los textos dentro de listas no ordenadas */
+ul {
+    color: #f5709d;
+}
+
+/* Color para los textos dentro de listas ordenadas */
+ol {
+    color: #f5709d;
+}
+
+/* Color para los textos dentro de listas ordenadas */
+table {
+    color: #70cbf5;
+    background-color: #616161;
+}
+
+/* Color para todos los títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: #924080;
+    text-shadow: 2px 2px 4px #7a0140; /* Define la sombra */
+}
+
+/* Estilos específicos para la barra de navegación */
+.navbar {
+    background-color: #db56bab9;
+}
+
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: #032d38;
+    text-align: center;
+}
+
+/* Estilos para el footer */
+footer {
+    padding: 20px 0;
+}
+
+/* Estilos para los botones del footer */
+.footer-button {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Borde sin estilo */
+    padding: 5px 10px; /* Espaciado interno */
+    margin: 5px; /* Margen entre botones */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado enlaces */
+}
+
+.footer-button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para los botones de la barra de navegación */
+.navbar-button {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Borde sin estilo */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado enlaces */
+}
+
+.navbar-button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para el footer centrado */
+.centered-footer {
+    text-align: center; /* Alinea el texto al centro */
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
