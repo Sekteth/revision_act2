@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <h1>Registro de Usuario</h1>
+    <form action="registro.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="usuario">Nombre de usuario:</label>
+        <input type="text" id="usuario" name="usuario" required><br>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <input type="submit" value="Registrar Usuario">
+    </form>
+
+    <h2>Lista de Usuarios</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Nombre de usuario</th>
+        <th>E-mail</th>
+        <th>Acciones</th>
+    </tr>
+    <?php
+    include("registro/lista_usuarios.php");
+
+    // Verificar si se ha registrado un usuario exitosamente
+    if (isset($_GET["registro_exitoso"]) && $_GET["registro_exitoso"] === "true") {
+        echo "<p>Registro exitoso.</p>";
+    }
+    ?>
+</table>
+</body>
+</html>
